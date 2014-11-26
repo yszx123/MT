@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/host_banner_color" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/line_color" />
+
+    <RadioGroup
+        android:id="@+id/host_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:checkedButton="@+id/host_group"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/host_group"
+            style="@style/host_radio"
+            android:drawableTop="@drawable/selector_host_group"
+            android:text="团购" />
+
+        <RadioButton
+            android:id="@+id/host_bus"
+            style="@style/host_radio"
+            android:drawableTop="@drawable/selector_host_bus"
+            android:text="商家" />
+
+        <RadioButton
+            android:id="@+id/host_owner"
+            style="@style/host_radio"
+            android:drawableTop="@drawable/selector_host_owner"
+            android:text="我的" />
+
+        <RadioButton
+            android:id="@+id/host_more"
+            style="@style/host_radio"
+            android:drawableTop="@drawable/selector_host_more"
+            android:text="更多" />
+    </RadioGroup>
+
+</RelativeLayout>

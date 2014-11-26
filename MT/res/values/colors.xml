@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部菜单选中状态颜色 -->
+    <color name="host_text_color_checked">#3BC0B5</color>
+    <!-- 底部菜单文字未选中颜色 -->
+    <color name="host_text_color_normal">#A5A5A5</color>
+    <!-- 底部菜单背景颜色 -->
+    <color name="host_banner_color">#F1F4F4</color>
+    <!-- 背景颜色 -->
+    <color name="bg_color">#F0F0F0</color>
+    <!-- 分割线颜色 -->
+    <color name="line_color">#DDDDDD</color>
+    <!-- host顶部菜单的搜索框背景 -->
+    <color name="host_search_bg">#2CA399</color>
+    <!-- 名店抢购折扣价颜色 -->
+    <color name="panic">#F29700</color>
+
+</resources>

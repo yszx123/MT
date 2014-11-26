@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="216dip"
+        android:layout_height="243dip"
+        android:layout_centerInParent="true"
+        android:background="@anim/loading_anim" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dip"
+        android:text="努力加载中..."
+        android:textSize="13sp" />
+
+</RelativeLayout>

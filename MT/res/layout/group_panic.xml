@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/host_text_color_checked" >
+
+        <include layout="@layout/group_top_banner" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/topbanner"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:text="11点开抢"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#808080"
+                android:padding="3dip"
+                android:text="11"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#808080"
+                android:padding="3dip"
+                android:text="11"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text=":"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/secound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#808080"
+                android:padding="3dip"
+                android:text="11"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/panic_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置提醒"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_below="@id/topbanner" />
+
+    <ListView
+        android:id="@+id/panic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="12dip"
+        android:scrollbars="none" >
+    </ListView>
+
+    <include layout="@layout/view_loading" />
+
+</RelativeLayout>
